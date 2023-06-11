@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="contenedor">
-        <div class="caja-madre">
+        <div class="caja-madre" id="caja-madre">
             <div class="titulo">
                 <h2>Aqui puedes calcular las tablas de multiplicar</h2>
             </div>
@@ -16,10 +16,11 @@
                 <div class="formulario-hijo">
                     <label for="txtNumeroTabla" class="label-tablas">¿Hasta que tabla quieres?</label>
                     <input type="number" name="txtNumeroTabla" id="txtNumeroTabla" class="caja-numero">
-                    <button type="button" class="button-tablas">Mirar Tablas</button>
+                    <button type="button" class="button-tablas" id="botonCalcular">Mirar Tablas</button>
                 </div>
             </div>
-            <div class="caja-hija"></div>
+            <div class="caja-contenedor" id="caja-contenedor"></div>
+            
         </div>
     </div>
     <script src="js/main.js"></script>
