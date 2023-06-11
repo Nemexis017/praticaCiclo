@@ -6,6 +6,7 @@ Hora: 9:17 pm
 */
 
 window.onload = function(){
+    /** 
     document.getElementById('botonCalcular').onclick = function(){
         var tabla = document.getElementById('txtNumeroTabla').value;
         var resultado= "";
@@ -26,10 +27,26 @@ window.onload = function(){
         }
 
         document.getElementById('caja-contenedor').innerHTML= resultado;
-     
 
+    }  */
 
+    document.getElementById('botonCalcular').onclick = function(){
+        var tablas = document.getElementById('txtNumeroTabla').value;
+        var resultado= ""; 
+        var i;
+        for(i= 1; i<=tablas; i++){
+            resultado+= "<div class='caja-hija'>";
+            var  contar; 
+            for(contar= 1; contar<10; contar++){
+                resultado+= "<div class='celda-resultado'>";
+                resultado+= i + " x " + contar + " = " + (i * contar);
+                resultado+= "</div>"; 
+            }
 
+            resultado+= "</div>"; 
+
+            document.getElementById('caja-contenedor').innerHTML= resultado;
+        }
     }
 }
 
